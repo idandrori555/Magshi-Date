@@ -29,7 +29,7 @@ Just pick a date, and it’ll fetch info from the Magshimim spreadsheet to show 
 npm i -g deno
 ```
 
-### clone the project
+### Clone the project
 ```bash
 git clone https://github.com/idandrori555/magshi-date.git
 cd magshi-date
