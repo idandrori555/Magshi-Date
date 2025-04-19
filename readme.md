@@ -1,6 +1,6 @@
 # 🌟 Magshi-Date
 
-Magshi-Date is a simple and handy date search tool for Magshimim students.  
+Magshi-Date is a simple and handy date search tool for Magshimim students.
 Just pick a date, and it’ll fetch info from the Magshimim spreadsheet to show you if there are any lessons that day — all nice and tidy.
 
 ---
@@ -29,3 +29,6 @@ git clone https://github.com/idandrori555/magshi-date.git
 cd magshi-date
 npm i
 ```
+
+## ‼ Important
+this project was made for personal use. replace the id in the config with your spreadsheet id
