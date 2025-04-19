@@ -24,10 +24,16 @@ Just pick a date, and it’ll fetch info from the Magshimim spreadsheet to show 
 
 ## 🛠️ Installation
 
+### Install deno
+```bash
+npm i -g deno
+```
+
+### clone the project
 ```bash
 git clone https://github.com/idandrori555/magshi-date.git
 cd magshi-date
-npm i
+deno install
 ```
 
 ## ❗ Important
