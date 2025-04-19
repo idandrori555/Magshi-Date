@@ -36,5 +36,7 @@ cd magshi-date
 deno install
 ```
 
+---
+
 ## ❗ Important
 this project was made for personal use. replace the id in the config with your spreadsheet id
