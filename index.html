@@ -1,19 +1,83 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
   <head>
-    <link rel="icon" href="" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>סטטוס שיעורים מוקד באר שבע</title>
+    <title>מוצא שיעורים - מגשימים ב"ש</title>
     <link rel="stylesheet" href="./src/style.css" />
-    <script defer type="module" src="./src/main.ts"></script>
   </head>
   <body>
-    <div class="card">
-      <h1>בדיקת סטטוס שיעור</h1>
-      <input type="text" id="datePicker" placeholder="בחר תאריך" />
-      <button>בדוק שיעור</button>
-      <div id="output"></div>
+    <div class="container">
+      <header>
+        <h1>מוצא שיעורים</h1>
+        <p class="subtitle">חפש שיעורים לפי תאריך</p>
+      </header>
+
+      <div class="card">
+        <form class="search-form" id="search-form">
+          <div class="form-group">
+            <label for="lesson-date">בחר תאריך (DD/MM):</label>
+            <input type="text" id="lesson-date" placeholder="DD/MM" required />
+          </div>
+          <button type="submit" id="search-button">חפש שיעור</button>
+        </form>
+
+        <div class="loader" id="loader">
+          <div class="spinner"></div>
+          <p>מחפש שיעורים...</p>
+        </div>
+
+        <p class="error-message" id="error-message">
+          אירעה שגיאה בעת טעינת נתוני השיעור. אנא נסה שוב.
+        </p>
+      </div>
+
+      <div class="result-card" id="frontal-lesson">
+        <div class="result-header">
+          <div class="result-date" id="frontal-date"></div>
+          <div class="result-status status-frontal">פרונטלי</div>
+        </div>
+
+        <div class="lesson-details">
+          <div class="lesson-type-icon">🏫</div>
+          <h3>פרטי השיעור</h3>
+
+          <div class="detail-row">
+            <div class="detail-label">שעה:</div>
+            <div class="detail-value" id="frotal-time">20:00 - 17:00</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-card" id="virtual-lesson">
+        <div class="result-header">
+          <div class="result-date" id="virtual-date"></div>
+          <div class="result-status status-virtual">וירטואלי</div>
+        </div>
+
+        <div class="lesson-details">
+          <div class="lesson-type-icon">💻</div>
+          <h3>פרטי השיעור</h3>
+
+          <div class="detail-row">
+            <div class="detail-label">שעה:</div>
+            <div class="detail-value" id="virtual-time">20:00 - 17:00</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-card" id="no-lesson">
+        <div class="result-header">
+          <div class="result-date" id="no-lesson-date"></div>
+          <div class="result-status status-none">אין שיעור</div>
+        </div>
+        <div class="no-lesson">
+          <div class="lesson-type-icon">📅</div>
+          <p>לא נמצאו שיעורים בתאריך שנבחר.</p>
+        </div>
+      </div>
     </div>
+
+    <script src="app.ts" type="module"></script>
   </body>
 </html>
