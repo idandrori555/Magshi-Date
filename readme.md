@@ -17,7 +17,7 @@ Just pick a date, and it’ll fetch info from the Magshimim spreadsheet to show 
 ## ⚙️ Tech Stack
 
 - Deno + Vite
-- Custom api written in javascript
+- Custom api written in Typescript
 - Frontend written in plain HTML + CSS
 
 ---
