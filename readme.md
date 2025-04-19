@@ -30,5 +30,5 @@ cd magshi-date
 npm i
 ```
 
-## ‼ Important
+## ⭕ Important
 this project was made for personal use. replace the id in the config with your spreadsheet id
