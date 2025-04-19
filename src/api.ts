@@ -1,4 +1,7 @@
-const SPREADSHEET_ID = "1wlT7696OCfC6WwpLQ1LTJ7XkWbu1gEIKEAsXZDaHMak";
+import config from "./config.json";
+
+const { spreadsheet_id: SPREADSHEET_ID } = config;
+
 const CSV_URL = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:csv`;
 const NO_DATA_MESSAGE = "No data found in the spreadsheet";
 const NO_LESSON_MESSAGE = "אין שיעור";
