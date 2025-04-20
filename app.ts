@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /**
  * Returns references to all necessary DOM elements.
- *
  * @returns {Object} An object containing references to form, inputs, loaders, result containers, and error elements.
  */
 function getDOMElements() {
